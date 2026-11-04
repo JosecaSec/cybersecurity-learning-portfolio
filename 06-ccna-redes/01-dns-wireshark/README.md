@@ -19,8 +19,41 @@ This lab documents the analysis of DNS queries and responses using Wireshark, ba
 - Windows operating system
 
 ## Lab Procedure
+### Step 1: Prepare the Environment
 
-Documentation in progress.
+- Open Wireshark on the Windows computer.
+- Select the active network interface.
+- Start capturing network traffic.
+
+### Step 2: Generate Network Traffic
+
+- Open a web browser.
+- Navigate to a website to generate network activity.
+- Return to Wireshark and stop the packet capture.
+
+### Step 3: Filter DNS Packets
+
+- Enter the following display filter in Wireshark:
+
+```text
+dns
+```
+
+- Apply the filter to identify DNS packets in the capture.
+- Locate DNS query and response packets, if present.
+
+### Step 4: Examine DNS Communication
+
+- Select a DNS response packet.
+- Expand the Internet Protocol and User Datagram Protocol sections.
+- Identify the source and destination ports.
+- Review the Domain Name System section to inspect the DNS message.
+
+### Step 5: Record Findings
+
+- Record the observed UDP source port: 53.
+- Record the observed UDP destination port: 33840.
+- Explain how the DNS response reaches the client through the temporary UDP port.
 
 ## Packet Analysis
 ### DNS Response Analysis
