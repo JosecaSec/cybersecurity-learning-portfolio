@@ -72,7 +72,10 @@ The DNS server sends its response using UDP source port 53. The client receives 
 This demonstrates how DNS name resolution commonly uses UDP and how transport-layer port numbers identify the communicating application endpoints.
 ## Evidence
 
-Screenshots and sanitized capture examples will be added.
+### DNS Traffic Capture
+The following image is an anonymized visual representation of DNS traffic observed during the Wireshark lab. It illustrates DNS queries and responses using the `dns` display filter.
+Private IP addresses and device identifiers have been replaced with example values. The image is illustrative and should not be treated as an unmodified packet capture.
+![Anonymized DNS traffic visualization](evidence/dns-capture.png)
 
 ## Conclusions
 
