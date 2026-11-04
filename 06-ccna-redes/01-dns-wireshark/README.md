@@ -23,9 +23,20 @@ This lab documents the analysis of DNS queries and responses using Wireshark, ba
 Documentation in progress.
 
 ## Packet Analysis
+### DNS Response Analysis
+During the lab, DNS traffic was captured and examined using Wireshark.
+The following UDP ports were observed in a DNS response packet:
 
-Documentation in progress.
+| Field | Observed Value |
+|---|---|
+| Application Protocol | DNS |
+| Transport Protocol | UDP |
+| Source Port | 53 |
+| Destination Port | 33840 |
 
+### Technical Explanation
+The DNS server sends its response using UDP source port 53. The client receives the response on its temporary UDP port 33840, which was used for the corresponding DNS transaction.
+This demonstrates how DNS name resolution commonly uses UDP and how transport-layer port numbers identify the communicating application endpoints.
 ## Evidence
 
 Screenshots and sanitized capture examples will be added.
